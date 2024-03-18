@@ -147,13 +147,15 @@ p {
   z-index: 10;
   bottom: 0px;
   gap: 40px;
+   color: white !important;
 }
 
 .previewDiv div{
-  font-size: 30px;
+  font-size: clamp(16px, 30px, 2vw);
   cursor: pointer;
 }
 
 .previewDiv h5{
-  font-size: 30px;
+  font-size: clamp(16px, 30px, 2vw);
+ 
 }
