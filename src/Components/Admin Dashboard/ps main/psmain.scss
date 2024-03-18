@@ -1,0 +1,312 @@
+.container {
+  .ps-main {
+    .back-btn {
+      display: flex;
+      align-items: center;
+      column-gap: 5px;
+      width: 80px;
+      cursor: pointer;
+      color: rgba(0, 0, 0, 0.4);
+      text-align: center;
+      font-feature-settings: "cv11" on, "cv01" on, "ss01" on;
+      font-family: "Inter";
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 20px;
+      &:hover {
+        color: rgba(0, 0, 0, 0.4);
+      }
+    }
+    h2 {
+      color: #000;
+      font-family: "Inter";
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      margin-bottom: 23px;
+    }
+    .content {
+      display: flex;
+      flex-direction: column;
+      row-gap: 25px;
+      .content-top {
+        padding: 20px 28px 40px 28px;
+        border-radius: 4px;
+        background: var(--bg-primary);
+        display: flex;
+        flex-direction: column;
+        row-gap: 43px;
+        .tabs-outer {
+          width: 100%;
+          overflow-x: auto;
+          .pd-tabs {
+            display: flex;
+            align-items: center;
+            column-gap: 30px;
+            a {
+              color: #888;
+              font-family: "Inter";
+              font-size: 15px;
+              font-style: normal;
+              font-weight: 500;
+              line-height: normal;
+              text-decoration: none;
+              padding-bottom: 10px;
+              &.active {
+                color: #ff7d05;
+                border-bottom: 2px solid #ff7d05;
+              }
+            }
+          }
+        }
+        .size-head {
+          display: flex;
+          align-items: center;
+          column-gap: 12px;
+          padding: 11px 20px;
+          border-radius: 6px;
+          border: 0.75px solid #9c9c9c;
+          width: 380px;
+
+          select {
+            width: 40%;
+            border: none;
+            outline: none;
+            color: #4a4a4a;
+            font-family: "Inter";
+            font-size: 13px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            cursor: pointer;
+          }
+
+          .search-div {
+            display: flex;
+            align-items: center;
+            width: 60%;
+            column-gap: 15px;
+            border: none;
+            input {
+              width: 100%;
+              border: none;
+              outline: none;
+              color: rgb(0, 0, 0);
+              font-feature-settings: "cv11" on, "cv01" on, "ss01" on;
+              font-family: "Inter";
+              font-size: 13px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: 20px; /* 153.846% */
+              &::placeholder {
+                color: rgba(0, 0, 0, 0.4);
+                font-feature-settings: "cv11" on, "cv01" on, "ss01" on;
+                font-family: "Inter";
+                font-size: 13px;
+                font-style: normal;
+                font-weight: 400;
+                //   line-height: 20px;
+              }
+            }
+            img {
+              cursor: pointer;
+            }
+          }
+        }
+      }
+      .table-outer {
+        overflow-x: auto;
+
+        .ps-table {
+          margin-top: 27px;
+          min-width: 1170px;
+          border-radius: 6px;
+          border: 0.75px solid #9c9c9c;
+          .psHeader {
+            border-radius: 5px;
+            background: rgba(255, 125, 5, 0.06);
+            padding: 10px 0px;
+            padding-inline: 24px;
+            .MuiGrid-item {
+              color: #ff7d05;
+              font-family: "Inter";
+              font-size: 13px;
+              font-style: normal;
+              font-weight: 500;
+              line-height: 150%;
+            }
+          }
+          .psTableRows,
+          .psHeader {
+            display: flex;
+            column-gap: 50px;
+            .ist-div {
+              width: 300px;
+            }
+            .second-div {
+              width: 100px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+            }
+            .third-div {
+              width: 150px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+            }
+            .forth-div {
+              width: 150px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+            }
+            .fifth-div {
+              width: 150px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+            }
+          }
+          .psTableRows {
+            padding: 19px 25px;
+            border-bottom: 1px solid #d9d9d9;
+            .ist-div {
+              .psImagediv {
+                display: flex;
+                align-items: center;
+                column-gap: 18px;
+                img {
+                  width: 92px;
+                  height: 92px;
+                  object-fit: cover;
+                }
+                div {
+                  display: flex;
+                  flex-direction: column;
+                  row-gap: 3px;
+                  p {
+                    color: #000;
+                    font-family: "Inter";
+                    font-size: 13px;
+                    font-style: normal;
+                    font-weight: 500;
+                  }
+                  span {
+                    color: #7a7a7a;
+                    font-family: "Inter";
+                    font-size: 13px;
+                    font-style: normal;
+                    font-weight: 400;
+                  }
+                }
+              }
+            }
+            .second-div {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              color: #6bcb53;
+              font-family: "Inter";
+              font-size: 13px;
+              font-style: normal;
+              font-weight: 500;
+            }
+            .third-div,
+            .forth-div {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              color: #7a7a7a;
+              font-family: "Inter";
+              font-size: 13px;
+              font-style: normal;
+              font-weight: 500;
+            }
+            .fifth-div {
+              button {
+                padding: 4px 24px;
+                border-radius: 4px;
+                border: 1px solid #ff7d05;
+                color: #ff7d05;
+                font-family: "Inter";
+                font-size: 13px;
+                font-style: normal;
+                font-weight: 600;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/////////////////////////////////////// Media Query //////////////////////////////////
+
+@media only screen and (max-width: 600px) {
+  .container {
+    padding: 0px 10px;
+    .ps-main {
+      .back-btn {
+        display: flex;
+        align-items: center;
+        column-gap: 5px;
+        width: 80px;
+        cursor: pointer;
+        color: rgba(0, 0, 0, 0.4);
+        text-align: center;
+        font-feature-settings: "cv11" on, "cv01" on, "ss01" on;
+        font-family: "Inter";
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px;
+        &:hover {
+          color: rgba(0, 0, 0, 0.4);
+        }
+      }
+      h2 {
+        margin-bottom: 15px;
+      }
+      .content {
+        display: flex;
+        flex-direction: column;
+        row-gap: 15px;
+        .content-top {
+          padding: 15px;
+          border-radius: 4px;
+          background: var(--bg-primary);
+          display: flex;
+          flex-direction: column;
+          row-gap: 43px;
+          .tabs-outer {
+            overflow-x: auto;
+            .pd-tabs {
+              display: flex;
+              align-items: center;
+              column-gap: 15px;
+              width: 440px;
+            }
+          }
+          .size-head {
+            padding: 10px;
+            width: 100%;
+
+            select {
+              width: 50%;
+            }
+
+            .search-div {
+              display: flex;
+              align-items: center;
+              width: 50%;
+            }
+          }
+        }
+      }
+    }
+  }
+}

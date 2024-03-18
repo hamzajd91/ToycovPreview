@@ -1,0 +1,73 @@
+
+/* =========================================================================== */
+/* steps  */
+/* =========================================================================== */
+
+.steps-space {
+    padding-block: 20px;
+  }
+  
+  .inputSection {
+    padding-block: 20px;
+  }
+  
+  .inputSection div , .inputSection {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .buy-top-row{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+  }
+  
+  .step2-postcode-row{
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+  }
+  
+  .step2-postcode-row > div{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+  }
+  .step1Buttons {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  
+    padding-top: 100px;
+  }
+  
+  .steps-btn-space {
+    padding-inline: 50px !important ;
+  }
+  
+  .step3-expire-row{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+  }
+  
+  .step3-expire-row span{
+      font-size: 25px;
+      font-weight: 500;
+  }
+
+
+  @media screen and (max-width: 900px) {
+    .buy-top-row{
+      flex-direction: column;
+      gap: 10px;
+  }
+
+  .step2-postcode-row{
+    flex-direction: column;
+}
+  }

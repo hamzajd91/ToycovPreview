@@ -1,0 +1,114 @@
+.featuredBrands {
+  width: 100%;
+}
+.featuredBrands .main {
+  width: 100%;
+}
+.featuredBrands .main .listDiv {
+  margin-top: 30px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.featuredBrands .main .listOne {
+  display: flex;
+}
+.featuredBrands .main .listOne .imageDiv {
+  border-right: 2px solid #f4f4f4;
+  height: 200px;
+  width: 260px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  border-left: 2px solid #f4f4f4;
+}
+
+.featuredBrands .main .listOne .imageDivTwo {
+  width: 260px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  border-left: 2px solid #f4f4f4;
+  border-right: 2px solid #f4f4f4;
+}
+
+.featuredBrands .main .listTwo {
+  display: flex;
+}
+.featuredBrands .main .listTwo .imageDiv {
+  border-right: 2px solid #f4f4f4;
+  border-left: 2px solid #f4f4f4;
+  border-right: 2px solid #f4f4f4;
+  border-top: 2px solid #f4f4f4;
+  height: 200px;
+  width: 260px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+}
+
+.featuredBrands .main .listTwo .imageDivTwo {
+  border-top: 1px solid #f4f4f4;
+  height: 200px;
+  width: 260px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+}
+
+.featuredBrands .main .buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 30px;
+  margin-top: 25px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.featuredBrands .main .buttons .left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 35px;
+  background: #ff7d05;
+  height: 45px;
+  width: 45px;
+  border: none;
+}
+
+.featuredBrands .main .buttons .right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ff7d05;
+  border-radius: 35px;
+  height: 45px;
+  width: 45px;
+  border: none;
+}
+
+@media screen and (max-width: 715px) {
+  .featuredBrands .main .listOne .imageDiv .image {
+    height: 80px;
+    width: 80px;
+  }
+  .featuredBrands .main .listOne .imageDivTwo .image {
+    height: 80px;
+    width: 80px;
+  }
+  .featuredBrands .main .listTwo .imageDiv .image {
+    height: 80px;
+    width: 80px;
+  }
+  .featuredBrands .main .listTwo .imageDivTwo .image {
+    height: 80px;
+    width: 80px;
+  }
+}

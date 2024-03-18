@@ -1,0 +1,143 @@
+.container {
+  .Campaigns {
+    .heading {
+      color: #000;
+      font-family: "Inter";
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      margin-bottom: 23px;
+    }
+    .top {
+      background: var(--bg-primary);
+      padding: 33px;
+      border-radius: 4px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 30px;
+      margin-bottom: 27px;
+      .product-shop,
+      .short-video {
+        border-radius: 6px;
+        border: 1px solid #dde2f0;
+        padding: 34px 55px 33px 18px;
+        display: flex;
+        align-items: flex-start;
+        gap: 14px;
+        img {
+          width: 34px;
+          height: 34px;
+        }
+        .right-content {
+          h3 {
+            color: #403448;
+            font-family: "Inter";
+            font-size: 17px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            margin-bottom: 5px;
+          }
+          p {
+            color: #989898;
+            font-family: "Inter";
+            font-size: 13px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            margin-bottom: 19px;
+          }
+          button {
+            border: none;
+            width: 120px;
+            padding: 4px 20px;
+            color: #fff;
+            font-feature-settings: "cv11" on, "cv01" on, "ss01" on;
+            font-family: "Inter";
+            font-size: 13px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 20px; /* 153.846% */
+            border-radius: 4px;
+            background: #ff7d05;
+          }
+        }
+      }
+    }
+    .bottom {
+      padding: 22px 38px;
+      background: var(--bg-primary);
+      border-radius: 4px;
+      h2 {
+        color: #000;
+        font-family: "Inter";
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+      }
+      .react-tabs__tab--selected {
+        color: #ff7d05 !important;
+        text-decoration-line: underline;
+      }
+      .tab-head {
+        display: flex;
+        align-items: center;
+        column-gap: 27px;
+        list-style-type: none;
+        padding-left: 0px;
+        background: transparent;
+
+        .tab {
+          color: #838383;
+          font-family: "Inter";
+          font-size: 15px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+          &:focus {
+            color: #ff7d05;
+            text-decoration-line: underline;
+          }
+        }
+      }
+    }
+  }
+}
+
+/////////////////////////////////////// Media Query //////////////////////////////////
+
+@media only screen and (max-width: 1000px) {
+  .container {
+    .Campaigns {
+      .heading {
+        margin-bottom: 10px;
+      }
+      .top {
+        padding: 10px 0px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        margin-bottom: 0px;
+        .product-shop,
+        .short-video {
+          padding: 15px;
+
+          .right-content {
+            p {
+              margin-bottom: 10px;
+            }
+          }
+        }
+      }
+      .bottom {
+        padding: 10px 0px;
+        .tab-head {
+          column-gap: 15px;
+          margin-bottom: 0px;
+        }
+      }
+    }
+  }
+}

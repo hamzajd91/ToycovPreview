@@ -1,0 +1,254 @@
+.login {
+  width: 100%;
+  display: flex;
+  background: #ffffff;
+}
+
+.login .leftDiv {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.login .leftDiv .contentDiv {
+  width: 80%;
+  padding-top: 60px;
+}
+.login .leftDiv .contentDiv .heading {
+  font-family: var(--font1);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 40px;
+  /* identical to box height, or 42% */
+
+  color: #010101;
+}
+.login .leftDiv .contentDiv .subHeading {
+  font-family: var(--font1);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  /* identical to box height */
+
+  letter-spacing: 0.03em;
+  margin-top: 20px;
+  color: #636364;
+}
+.login .leftDiv .contentDiv .emailHeading {
+  font-family: var(--font1);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  /* identical to box height, or 125% */
+  margin-top: 50px;
+  color: #000000;
+
+  /* Inside auto layout */
+}
+.login .leftDiv .contentDiv .passwordHeading {
+  font-family: var(--font1);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  /* identical to box height, or 125% */
+  margin-top: 22px;
+  color: #000000;
+
+  /* Inside auto layout */
+}
+.login .leftDiv .contentDiv .inputSection {
+  width: 100%;
+  height: 45px;
+  color: black;
+  background: transparent;
+  border: 1px solid #8b8b8b;
+  filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.25));
+  border-radius: 5px;
+  padding-left: 10px;
+  margin-top: 5px;
+}
+
+.login .leftDiv .contentDiv .inputSection::placeholder {
+  font-family: var(--font1);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.1em;
+
+  /* Surface */
+  color: #8b8b8b; /* Change the color to your desired value */
+}
+.login .leftDiv .contentDiv .forgetHeading {
+  font-family: var(--font1);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  /* identical to box height, or 125% */
+  margin-top: 3px;
+  text-align: end;
+  color: #3878df;
+}
+
+.login .leftDiv .contentDiv .loginDiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 15px;
+  gap: 10px;
+  background: var(--primary);
+  border-radius: 5px;
+  margin-top: 31px;
+}
+.login .leftDiv .contentDiv .loginDiv p {
+  font-family: var(--font1);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  /* identical to box height, or 125% */
+
+  text-align: center;
+
+  color: #fbfbfb;
+}
+.login .leftDiv .contentDiv .continueHeading {
+  font-family: var(--font1);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  /* identical to box height, or 125% */
+
+  color: #000000;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.login .leftDiv .contentDiv .buttonDiv {
+  display: flex;
+  margin-top: 29px;
+  gap: 20px;
+}
+
+.login .leftDiv .contentDiv .buttonDiv .buttonGoogle {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  width: 100%;
+  background: #f2f2f2;
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 5px;
+}
+.login .leftDiv .contentDiv .buttonDiv .buttonGoogle p {
+  font-family: var(--font1);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  /* identical to box height */
+
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: #010101;
+}
+
+.login .leftDiv .contentDiv .buttonDiv .buttonFacebook {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  width: 100%;
+  background: #f2f2f2;
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 5px;
+}
+.login .leftDiv .contentDiv .buttonDiv .buttonFacebook p {
+  font-family: var(--font1);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  /* identical to box height */
+
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: #010101;
+}
+.login .leftDiv .contentDiv .noAccount {
+  font-family: var(--font1);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #7b7b7b;
+  margin-top: 30px;
+}
+
+.login .rightDiv {
+  width: 50%;
+  height: 100%;
+  padding-left: 30px;
+}
+
+.login .rightDiv .imageDiv {
+  width: 80%;
+  height: 100%;
+}
+
+.login .rightDiv .imageDiv .imageAeroplane {
+  object-fit: cover;
+  width: 100%;
+}
+
+@media screen and (max-width: 750px) {
+  .login {
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 80px;
+    flex-direction: column;
+  }
+
+  .login .leftDiv {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+  }
+
+  .login .leftDiv .contentDiv {
+    width: 80%;
+    padding-top: 60px;
+  }
+
+  .login .rightDiv {
+    width: 100%;
+    padding: 30px;
+  }
+
+  .login .rightDiv .imageDiv {
+    width: 100%;
+    height: 100%;
+    margin-top: 30px;
+  }
+
+  .login .rightDiv .imageDiv .imageAeroplane {
+    display: none;
+  }
+}

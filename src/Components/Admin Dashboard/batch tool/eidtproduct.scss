@@ -1,0 +1,476 @@
+.container {
+  .Editproduct {
+    a {
+      display: flex;
+      align-items: center;
+      column-gap: 5px;
+      cursor: pointer;
+      color: rgba(0, 0, 0, 0.4);
+      text-align: center;
+      font-feature-settings: "cv11" on, "cv01" on, "ss01" on;
+      font-family: "Inter";
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 20px;
+      &:hover {
+        color: rgba(0, 0, 0, 0.4);
+      }
+    }
+    h2 {
+      margin: 5px 0px 22px 0px;
+      color: #000;
+      font-family: "Inter";
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+    }
+    .content {
+      padding: 27px 43px 27px 22px;
+      background-color: var(--bg-primary);
+      border-radius: 4px;
+      display: flex;
+      flex-direction: column;
+      gap: 27px;
+      .top {
+        padding: 26px 22px;
+        border-radius: 6px;
+        background: rgba(255, 125, 5, 0.06);
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        h3 {
+          color: #000;
+          font-family: Inter;
+          font-size: 15px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: normal;
+        }
+        button {
+          width: 180px;
+          border-radius: 6px;
+          background-color: var(--primary);
+          border: none;
+          padding: 10px 42px;
+          color: #fff;
+          font-family: "Manrope";
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 18px;
+        }
+      }
+      .bottom {
+        padding: 23px 22px;
+        display: flex;
+        border-radius: 6px;
+        background: rgba(255, 125, 5, 0.06);
+        display: flex;
+        flex-direction: column;
+        gap: 34px;
+        h3 {
+          color: #000;
+          font-family: "Inter";
+          font-size: 15px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: normal;
+          margin: 0px;
+        }
+        .boxes {
+          display: flex;
+          align-items: center;
+          flex-wrap: wrap;
+          gap: 30px 63px;
+          div {
+            display: flex;
+            align-items: center;
+            column-gap: 11.59px;
+            p {
+              color: #1c1c1c;
+              text-align: center;
+              font-feature-settings: "cv11" on, "cv01" on, "ss01" on;
+              font-family: "Inter";
+              font-size: 14px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: 20px;
+            }
+          }
+        }
+      }
+      .custom-checkbox {
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        width: 15px;
+        height: 15px;
+        border: 2px solid #8e8e93;
+        border-radius: 2px;
+        outline: none;
+        cursor: pointer;
+        position: relative;
+      }
+
+      /* Create the custom checkmark using ::before pseudo-element */
+      .custom-checkbox::before {
+        content: "\2713"; /* Unicode checkmark character */
+        font-size: 10px;
+        color: white; /* Set the color to white */
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      /* Style the checkbox when it is checked */
+      .custom-checkbox:checked {
+        background-color: var(
+          --primary
+        ); /* Set the background color when checked */
+        /* Set the border color when checked */
+        border: none;
+      }
+
+      /* Hide the checkmark when the checkbox is not checked */
+      .custom-checkbox:not(:checked)::before {
+        content: none;
+      }
+      input[type="checkbox"]:checked {
+        accent-color: var(--primary);
+      }
+    }
+    .modal-content {
+      width: 50vw;
+    }
+    .modal-dialog {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .modal {
+      overflow-x: auto;
+      .modal-top {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 13px;
+
+        .active-btn {
+          border-radius: 6px;
+          border: 0.75px solid #9c9c9c;
+          padding: 12px 18px 10px 18px;
+          p {
+            color: #4e4e4e;
+            font-family: "Inter";
+            font-size: 13px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+          }
+        }
+        .catagories-dropdown {
+          border-radius: 6px;
+          border: 0.75px solid #9c9c9c;
+          padding: 12px 18px 10px 18px;
+          color: #4e4e4e;
+          font-family: "Inter";
+          font-size: 13px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+
+          select {
+            width: 100%;
+
+            border: none;
+            outline: none;
+          }
+        }
+        .search-div {
+          border-radius: 6px;
+          border: 0.75px solid #9c9c9c;
+          padding: 12px 18px 10px 18px;
+          display: flex;
+          align-items: center;
+          input {
+            width: 100%;
+            border: none;
+            outline: none;
+            color: #000000;
+            font-family: "Inter";
+            font-size: 13px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            &::placeholder {
+              color: #4e4e4e;
+            }
+          }
+        }
+      }
+      .close-btn {
+        border-radius: 4px;
+        border: 1px solid #c2c2c2;
+        box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.5);
+        color: #787878;
+        font-feature-settings: "clig" off, "liga" off;
+        font-family: SF UI Display;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 22px; /* 169.231% */
+        letter-spacing: 0.5px;
+        padding: 9px 45px;
+        border: none;
+      }
+      .save-btn {
+        border-radius: 4px;
+        background: #ff7d05;
+        box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.5);
+        color: #fff;
+        font-feature-settings: "clig" off, "liga" off;
+        font-family: SF UI Display;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 22px; /* 169.231% */
+        letter-spacing: 0.5px;
+        padding: 9px 45px;
+        border: none;
+      }
+      .modaltable-outer {
+        width: 100%;
+        overflow-x: auto;
+        .modal-table {
+          width: 100%;
+          margin-top: 27px;
+          min-width: 750px;
+          border-radius: 6px;
+          border: 0.75px solid #9c9c9c;
+          .modal-header {
+            border-bottom: none;
+          }
+          .ModalTableHeader {
+            border-radius: 5px;
+            background: rgba(255, 125, 5, 0.06);
+            padding: 10px 0px;
+            padding-inline: 24px;
+            .MuiGrid-item {
+              color: #ff7d05;
+              font-family: "Inter";
+              font-size: 13px;
+              font-style: normal;
+              font-weight: 500;
+              line-height: 150%;
+            }
+          }
+          .ModalTableRows,
+          .ModalTableHeader {
+            display: flex;
+            column-gap: 45px;
+            .ist-div {
+              width: 400px;
+            }
+            .second-div,
+            .third-div {
+              width: 100px;
+            }
+          }
+          .ModalTableRows {
+            padding: 19px 25px;
+            margin-right: 25px;
+            .ist-div {
+              .ModalImagediv {
+                display: flex;
+                align-items: center;
+                column-gap: 19px;
+                img {
+                  width: 46px;
+                  height: 47px;
+                  border-radius: 5px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/////////////////////////////////////// Media Query //////////////////////////////////
+
+@media only screen and (max-width: 960px) {
+  .container {
+    .Editproduct {
+      .modal-content {
+        padding: 15px;
+        width: 80vw !important;
+      }
+      .modal-body {
+        padding: 10px;
+      }
+      .modal {
+        overflow-x: auto;
+        .modal-top {
+          grid-template-columns: unset;
+          grid-template-rows: repeat(3, 1fr);
+          gap: 10px;
+
+          .active-btn {
+            border-radius: 6px;
+            border: 0.75px solid #9c9c9c;
+            padding: 12px 18px 10px 18px;
+            p {
+              color: #4e4e4e;
+              font-family: "Inter";
+              font-size: 13px;
+              font-style: normal;
+              font-weight: 500;
+              line-height: normal;
+            }
+          }
+          .catagories-dropdown {
+            padding: 10px;
+            select {
+              width: 100%;
+            }
+          }
+          .search-div {
+            padding: 10px;
+            width: 100%;
+          }
+        }
+        .close-btn {
+          padding: 9px 30px;
+          border: none;
+        }
+        .save-btn {
+          padding: 9px 30px;
+          border: none;
+        }
+        .modaltable-outer {
+          width: 100%;
+          overflow-x: auto;
+          .modal-table {
+            width: 100%;
+            margin-top: 10px;
+            min-width: 750px;
+            border-radius: 6px;
+            border: 0.75px solid #9c9c9c;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    .Editproduct {
+      h2 {
+        margin: 5px 0px 0px 0px;
+      }
+      .content {
+        padding: 15px;
+        background-color: var(--bg-primary);
+        border-radius: 4px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        .top {
+          padding: 15px;
+          border-radius: 6px;
+          background: rgba(255, 125, 5, 0.06);
+          display: flex;
+          flex-direction: column;
+          gap: 30px;
+          h3 {
+            color: #000;
+            font-family: Inter;
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+          }
+          button {
+            width: 180px;
+            border-radius: 6px;
+            background-color: var(--primary);
+            border: none;
+            padding: 10px 42px;
+            color: #fff;
+            font-family: "Manrope";
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 18px;
+          }
+        }
+        .bottom {
+          padding: 15px;
+
+          gap: 34px;
+
+          .boxes {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            div {
+              display: flex;
+              align-items: center;
+              column-gap: 11.59px;
+            }
+          }
+        }
+        .custom-checkbox {
+          appearance: none;
+          -webkit-appearance: none;
+          -moz-appearance: none;
+          width: 15px;
+          height: 15px;
+          border: 2px solid #8e8e93;
+          border-radius: 2px;
+          outline: none;
+          cursor: pointer;
+          position: relative;
+        }
+
+        /* Create the custom checkmark using ::before pseudo-element */
+        .custom-checkbox::before {
+          content: "\2713"; /* Unicode checkmark character */
+          font-size: 10px;
+          color: white; /* Set the color to white */
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+
+        /* Style the checkbox when it is checked */
+        .custom-checkbox:checked {
+          background-color: var(
+            --primary
+          ); /* Set the background color when checked */
+          /* Set the border color when checked */
+          border: none;
+        }
+
+        /* Hide the checkmark when the checkbox is not checked */
+        .custom-checkbox:not(:checked)::before {
+          content: none;
+        }
+        input[type="checkbox"]:checked {
+          accent-color: var(--primary);
+        }
+      }
+    }
+  }
+}

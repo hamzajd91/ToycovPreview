@@ -1,0 +1,112 @@
+.upgrade {
+  width: 100%;
+  padding-block: 46px;
+  padding-inline: 60px;
+}
+
+.upgrade .heading {
+  color: var(--text-primary);
+  font-size: 22px;
+  font-family: Poppins;
+  font-weight: 600;
+}
+
+.upgrade .goldDiv {
+  margin-top: 43px;
+  border-radius: 4px;
+  border: 1px solid var(--primary);
+  background: var(--bg-secondary);
+  width: 351px;
+  height: 122px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.upgrade .first {
+  color:var(--primary);
+  font-size: 18px;
+  font-family: Poppins;
+  font-weight: 500;
+}
+
+.upgrade .goldDiv .second {
+  color: var(--text-secondary);
+  font-size: 14px;
+  font-family: Poppins;
+}
+
+.upgrade .benefit {
+  color: var(--text-primary);
+  font-size: 20px;
+  font-family: Poppins;
+  font-weight: 500;
+  margin-top: 64px;
+}
+
+.upgrade .benefit .benefitText {
+  display: flex;
+  width: 803px;
+  flex-direction: column;
+  flex-shrink: 0;
+  color: #4b4b4b;
+  font-size: 18px;
+  font-family: Poppins;
+  margin-top: 12px;
+}
+
+.upgrade .conditionsHeading {
+  color: #000;
+  font-size: 20px;
+  font-family: Poppins;
+  font-weight: 500;
+  margin-top: 23px;
+}
+
+.upgrade .conditionsHeading .conditionText {
+  display: flex;
+  width: 803px;
+  flex-direction: column;
+  flex-shrink: 0;
+  color: #4b4b4b;
+  font-size: 18px;
+  font-family: Poppins;
+  margin-top: 12px;
+}
+
+.upgrade .topupButton {
+  display: flex;
+  justify-content: center;
+  width: 319px;
+  height: 44px;
+  padding: 0px 32px;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  border: none;
+  background: var(--primary);
+  margin-top: 53px;
+}
+
+.upgrade .topupButton .buttonText {
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  font-family: Poppins;
+  font-weight: 600;
+  line-height: 44px;
+  letter-spacing: 0.5px;
+}
+
+@media screen and (max-width: 650px) {
+  .upgrade {
+    padding-left: 10px;
+  }
+
+  .upgrade .goldDiv {
+    width: 98%;
+    height: 100px;
+    align-self: center;
+  }
+}

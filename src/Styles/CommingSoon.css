@@ -1,0 +1,41 @@
+.commingSoon_background {
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-image: url(../../public/assets/images/Comming\ Soon/commingSoon.png);
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.commingSoon_background img {
+  width: clamp(110px, 25vw, 222px);
+  height: fit-content;
+}
+
+@media (max-width: 720px) {
+  .commingSoon_background {
+    /* justify-content: center; */
+  }
+}
+
+@media (max-width: 570px) {
+  .commingSoon_background {
+    background-image: url(../../public/assets/images/Comming\ Soon/commingSoon-phone.png);
+    /* background-size: auto;
+    background-position-y:0rem; */
+  }
+}
+
+@media (min-width: 371px) and (max-width: 570px) {
+  .commingSoon_background {
+    background-size: 100%;
+  }
+}
+
+@media (min-width: 470px) and (max-width: 570px) {
+  .commingSoon_background {
+    background-position: 0px -36px;
+    background-size: auto;
+    background-size: 100%;
+  }}

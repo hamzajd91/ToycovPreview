@@ -1,0 +1,99 @@
+.Orders {
+  width: 100%;
+  padding-block: 46px;
+  padding-inline: 30px;
+  overflow-x: auto !important;
+}
+
+.Orders h4{
+margin-bottom: 50px;
+  }
+  
+
+.setWidth td {
+  padding-block: 10px !important;
+  padding-right: 0px !important
+  ;
+}
+
+.setWidth td:nth-child(1),
+.setWidth tr:nth-child(1) {
+  width: 10%;
+}
+.setWidth td:nth-child(2),
+.setWidth tr:nth-child(2) {
+  width: 20%;
+}
+.setWidth td:nth-child(3),
+.setWidth tr:nth-child(3) {
+  width: 10%;
+}
+.setWidth td:nth-child(4),
+.setWidth tr:nth-child(4) {
+  width: 20%;
+}
+.setWidth td:nth-child(5),
+.setWidth tr:nth-child(5) {
+  width: 8%;
+}
+.setWidth td:nth-child(6),
+.setWidth tr:nth-child(6) {
+  width: 20px;
+}
+.setWidth td:nth-child(7),
+.setWidth tr:nth-child(7) {
+  width: 20%;
+}
+.setWidth td:nth-child(8),
+.setWidth tr:nth-child(8) {
+  width: 20px;
+}
+
+.Tableimage {
+  width: 80px;
+  height: 80px;
+  border-radius: 2px;
+  object-fit: cover;
+  border: 2px solid var(--bg-secondary);
+}
+
+.titleFlex {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.status {
+  width: 100%;
+  height: 32px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.status-progress {
+  border: 1px solid #3e7fea;
+  background: #eef6ff;
+}
+
+.status-delivered {
+  border: 1px solid #0f930f;
+  background: #c8fec8;
+}
+
+.status-shipping {
+  border: 1px solid #ffcb45;
+  background: #fff2cf;
+}
+
+.status-receive {
+  border: 1px solid #4b4b4b;
+  background: #cdcdcd;
+}
+
+.status-cancelled {
+  border: 1px solid #4b4b4b;
+  background: #e1e1e1;
+}

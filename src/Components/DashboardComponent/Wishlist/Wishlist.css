@@ -1,0 +1,44 @@
+.Wishlist {
+  width: 100%;
+  padding-block: 46px;
+  padding-inline: 40px;
+}
+
+.wishCardlist{
+    display: flex;
+    width: 100%;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.Wish-heart{
+position: absolute !important;
+right: 0px;
+}
+
+.WishlistCard {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: fit-content;
+}
+
+.wishImage-div {
+  position: relative;
+}
+
+.wishItem {
+  width: 209px;
+  height: 215px;
+  object-fit: cover;
+}
+
+.wishTitle {
+  display: flex;
+  justify-content: space-between;
+}
+
+.wishPrice {
+  display: flex;
+  gap: 10px;
+}

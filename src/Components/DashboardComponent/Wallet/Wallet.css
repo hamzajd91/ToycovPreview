@@ -1,0 +1,222 @@
+.toycove-wallet {
+  background-color: var(--bg-primary);
+  padding: 31px 57px 99px 34px;
+  display: flex;
+}
+
+
+.toycove-wallet .left-content {
+  max-width: 650px;
+  width: 120%;
+}
+.toycove-wallet .left-content .coupon-banner {
+  width: 697px;
+  width: clamp(300px, 697px, 100%);
+  /* width: clamp(100%, 5vw, 697px); */
+  /* height: 431px; */
+}
+
+.toycove-wallet .coupon-cards div{
+  /* display: grid; */
+  /* grid-template-columns: repeat(2, 1fr); */
+  display: flex;
+  column-gap: 15px;
+  row-gap: 10px;
+  margin-top: 23px;
+}
+
+.toycove-wallet .left-content .coupon-cards img {
+  /* width: 340.427px; */
+  width: 49%;
+  /* width: clamp(150px, 340.427px, 100%); */
+
+  /* height: 164.516px; */
+  object-fit: cover;
+}
+.toycove-wallet .topup {
+  margin-top: 36px;
+}
+.topup span {
+  color: #4b4b4b;
+  text-align: center;
+  font-size: 15px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.topup .topup-btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.topup .topup-btn input {
+  width: 100%;
+  height: 44px;
+  border-radius: 4px;
+  border: 1px solid #808191;
+  background: #fff;
+  padding-left: 16px;
+  margin-right: 16px;
+}
+.topup .topup-btn button {
+  width: 100%;
+  height: 44px;
+  border-radius: 4px;
+  background: #ff7d05;
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 44px;
+  letter-spacing: 0.5px;
+  border: none;
+}
+.toycove-wallet .right-content {
+  padding-left: 40px;
+  display: flex;
+  flex-direction: column;
+}
+.toycove-wallet .right-content .avail-balance {
+  width: 317px;
+  height: 149px;
+  border-radius: 4px;
+  border: 1px solid #808191;
+  background: #f4f4f4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.toycove-wallet .right-content .avail-balance p {
+  color: #808191;
+  font-size: 18px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.toycove-wallet .right-content .avail-balance h2 {
+  color: #ff7d05;
+  font-size: 36px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.toycove-wallet .right-content .payment-method {
+  margin-top: 111px;
+}
+.toycove-wallet .right-content .payment-method h2 {
+  color: #000;
+  font-size: 25px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.toycove-wallet .right-content .payment-method h3 {
+  color: #4b4b4b;
+  font-size: 16px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-top: 30px;
+  padding-bottom: 11px;
+  border-bottom: 1px solid rgba(153, 128, 172, 0.5);
+}
+.toycove-wallet .right-content .payment-method .add-card {
+  /* max-width: 366px; */
+  width: 100%;
+}
+.toycove-wallet .right-content .payment-method .add-card .mastercard {
+  color: #4b4b4b;
+  font-size: 16px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-top: 34px;
+}
+
+.toycove-wallet .right-content .payment-method .add-card label {
+  width: 100%;
+  background-color: #f3f3f3;
+  border-radius: 4px;
+  border: 1px solid #d8d8d8;
+  background: #fff;
+  padding-right: 180px;
+}
+.toycove-wallet .right-content .payment-method .add-card label img {
+  margin-right: 12px;
+}
+.toycove-wallet .right-content .payment-method .add-card button {
+  width: 100%;
+  height: 50px;
+  border-radius: 4px;
+  border: 1px solid #808191;
+  background: #fff;
+  color: #4b4b4b;
+  text-align: center;
+  font-size: 15px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-top: 85px;
+}
+.toycove-wallet .right-content .payment-method .add-card button .ico {
+  margin-right: 12px;
+}
+
+.btn-check:focus+.btn, .btn:focus {
+  background: var(--bg-secondary) !important;
+  animation-fill-mode: forwards !important;
+}
+
+@media screen and (max-width: 1800px) {
+  .toycove-wallet {
+    width: 1150px;
+  }
+}
+@media screen and (max-width: 1700px) {
+  .toycove-wallet {
+    width: unset;
+    flex-direction: column;
+  }
+
+  .toycove-wallet .left-content {
+    max-width: unset;
+    width: 100%;
+  }
+  .toycove-wallet .left-content .coupon-banner {
+    width: 100%;
+  }
+
+  .toycove-wallet .right-content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    padding-left: 0;
+  }
+  /* .toycove-wallet .left-content .coupon-cards {
+    grid-template-columns: repeat(3, 1fr);
+  } */
+
+  .toycove-wallet .right-content .payment-method {
+    margin-top: 33px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .toycove-wallet {
+    padding: 23px 23px 49px 23px;
+  }
+  .toycove-wallet .right-content .avail-balance {
+    width: 100%;
+  }
+}

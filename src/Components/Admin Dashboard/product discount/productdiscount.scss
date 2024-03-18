@@ -1,0 +1,177 @@
+.container {
+  .product-discount {
+    h2 {
+      color: #000;
+      font-family: "Inter";
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      margin-bottom: 23px;
+    }
+    .content {
+      display: flex;
+      flex-direction: column;
+      row-gap: 25px;
+      .content-top {
+        padding: 20px 28px 40px 28px;
+        border-radius: 4px;
+        background: var(--bg-primary);
+        display: flex;
+        flex-direction: column;
+        row-gap: 43px;
+        .tabs-outer {
+          width: 100%;
+          overflow-x: auto;
+          .pd-tabs {
+            display: flex;
+            align-items: center;
+            column-gap: 30px;
+            a {
+              color: #888;
+              font-family: "Inter";
+              font-size: 15px;
+              font-style: normal;
+              font-weight: 500;
+              line-height: normal;
+              text-decoration: none;
+              padding-bottom: 10px;
+              &.active {
+                color: #ff7d05;
+                border-bottom: 2px solid #ff7d05;
+              }
+            }
+          }
+        }
+        .size-head {
+          display: flex;
+          align-items: center;
+          column-gap: 12px;
+          padding: 11px 20px;
+          border-radius: 6px;
+          border: 0.75px solid #9c9c9c;
+          width: 380px;
+
+          select {
+            width: 40%;
+            border: none;
+            outline: none;
+            color: #4a4a4a;
+            font-family: "Inter";
+            font-size: 13px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            cursor: pointer;
+          }
+
+          .search-div {
+            display: flex;
+            align-items: center;
+            width: 60%;
+            column-gap: 15px;
+            border: none;
+            input {
+              width: 100%;
+              border: none;
+              outline: none;
+              color: rgb(0, 0, 0);
+              font-feature-settings: "cv11" on, "cv01" on, "ss01" on;
+              font-family: "Inter";
+              font-size: 13px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: 20px; /* 153.846% */
+              &::placeholder {
+                color: rgba(0, 0, 0, 0.4);
+                font-feature-settings: "cv11" on, "cv01" on, "ss01" on;
+                font-family: "Inter";
+                font-size: 13px;
+                font-style: normal;
+                font-weight: 400;
+                //   line-height: 20px;
+              }
+            }
+            img {
+              cursor: pointer;
+            }
+          }
+        }
+      }
+      .table-outer {
+        overflow-x: auto;
+
+        .managesize-table {
+          background: var(--bg-primary);
+          min-width: 970px;
+          border-radius: 6px;
+          border: 0.75px solid #9c9c9c;
+          .managesizeHeader {
+            border-radius: 5px;
+            background: rgba(255, 125, 5, 0.06);
+            padding: 10px 0px;
+            padding-inline: 41px;
+            display: flex;
+            column-gap: 60px;
+            .ist-div,
+            .second-div,
+            .third-div {
+              width: 200px;
+            }
+
+            .forth-div {
+              width: 100px;
+            }
+            .MuiGrid-item {
+              color: #ff7d05;
+              font-family: "Inter";
+              font-size: 13px;
+              font-style: normal;
+              font-weight: 500;
+              line-height: 150%;
+            }
+          }
+          .managesizeRow {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            min-height: 400px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/////////////////////////////////////// Media Query //////////////////////////////////
+
+@media only screen and (max-width: 600px) {
+  .container {
+    .product-discount {
+      h2 {
+        margin-bottom: 15px;
+      }
+      .content {
+        row-gap: 15px;
+        .content-top {
+          padding: 15px 0px;
+          row-gap: 20px;
+          .tabs-outer {
+            .pd-tabs {
+              column-gap: 15px;
+              a {
+                padding-bottom: 5px;
+              }
+            }
+          }
+          .size-head {
+            column-gap: 12px;
+            padding: 10px;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,414 @@
+.container {
+  .product-optimizer {
+    .top {
+      padding: 39px 85px 45px 38px;
+      background-color: var(--bg-primary);
+      border-radius: 4px;
+      margin: 22px 0px 13px 0px;
+      h2 {
+        color: var(--text-primary);
+        font-family: "Inter";
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        margin-bottom: 10px;
+      }
+      .inner {
+        display: flex;
+        column-gap: 46px;
+        .inner-left {
+          width: 50%;
+          padding: 18px 68px 18px 0px;
+          display: flex;
+          align-items: center;
+          column-gap: 26px;
+          border-right: 1px solid #c7c7c7;
+          div {
+            display: flex;
+            flex-direction: column;
+            row-gap: 24px;
+            padding: 24px 15px 24px 11px;
+            border-radius: 6px;
+            background: rgba(0, 0, 0, 0.06);
+            width: 170px !important;
+            height: 112px;
+            p {
+              color: #3e3e3e;
+              font-family: "Inter";
+              font-size: 12px;
+              font-style: normal;
+              font-weight: 500;
+              line-height: 20px;
+            }
+            span {
+              color: #3e3e3e;
+              font-family: "Inter";
+              font-size: 24px;
+              font-style: normal;
+              font-weight: 600;
+              line-height: 20px;
+            }
+          }
+        }
+        .Right {
+          width: 50%;
+          column-gap: 15px;
+          h6 {
+            color: var(--text-primary);
+            font-family: "Inter";
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+          }
+          p {
+            color: var(--text-secondary);
+            font-family: "Inter";
+            font-size: 13px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+          }
+        }
+      }
+    }
+    .bottom {
+      padding: 27px 30px 84px 33px;
+      background-color: var(--bg-primary);
+      border-radius: 4px;
+
+      .dropdown-section {
+        display: flex;
+        // align-items: center;
+        column-gap: 14px;
+        width: 100%;
+        .dropdown-toggle::after {
+          display: none;
+        }
+
+        .search-div,
+        .dropdown-div {
+          padding: 12px 20px;
+          border-radius: 6px;
+          border: 0.75px solid #9c9c9c;
+          height: 38px;
+          display: flex;
+          align-items: center;
+        }
+        .dropdown-div {
+          cursor: pointer;
+
+          button {
+            width: 100%;
+            border: none;
+            background-color: transparent;
+            padding: 0px;
+            margin: 0px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+          }
+          .dropdown-menu {
+            div {
+              padding: 10px;
+              display: flex;
+              align-items: center;
+              column-gap: 10px;
+              input {
+                width: 13.804px;
+                height: 13.804px;
+                fill: #c7c7c7;
+              }
+              p {
+                color: #484848;
+                text-align: center;
+                font-family: "Inter";
+                font-size: 13px;
+                font-style: normal;
+                font-weight: 400;
+                // line-height: 20px;
+                margin: 0px;
+              }
+            }
+          }
+        }
+        .search-div {
+          display: flex;
+          align-items: center;
+          width: 24.21%;
+
+          input {
+            border: none;
+            box-shadow: none;
+            // height: 16px;
+            outline: none;
+            font-family: "Inter";
+            font-size: 13px;
+            font-style: normal;
+            font-weight: 500;
+            &::placeholder {
+              color: #878787;
+              font-family: "Inter";
+              font-size: 13px;
+              font-style: normal;
+              font-weight: 500;
+              line-height: normal;
+            }
+          }
+        }
+        .ist {
+          width: 20.11%;
+        }
+        .second {
+          width: 25.36%;
+        }
+        .third {
+          width: 26.6%;
+          margin-top: 0px;
+        }
+      }
+      .table-outer {
+        overflow-x: auto;
+
+        .optimizer-table {
+          margin-top: 27px;
+          min-width: 1060px;
+          border-radius: 6px;
+          border: 0.75px solid #9c9c9c;
+          .OptimizerTableHeader {
+            border-radius: 5px;
+            background: rgba(255, 125, 5, 0.06);
+            padding: 10px 0px;
+            padding-inline: 24px;
+            .MuiGrid-item {
+              color: #ff7d05;
+              font-family: "Inter";
+              font-size: 13px;
+              font-style: normal;
+              font-weight: 500;
+              line-height: 150%;
+            }
+          }
+          .OptimizerTableRows,
+          .OptimizerTableHeader {
+            display: flex;
+            column-gap: 60px;
+            .ist-div {
+              width: 320px;
+            }
+            .second-div,
+            .third-div {
+              width: 200px;
+            }
+            .forth-div {
+              width: 100px;
+              button {
+                color: #ff7d05;
+                padding: 4px 24px;
+                font-family: "Inter";
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 20px;
+                border-radius: 4px;
+                background: transparent;
+                border: 1px solid #ff7d05;
+              }
+            }
+          }
+          .OptimizerTableRows {
+            padding: 19px 25px;
+            margin-right: 25px;
+            .ist-div {
+              .OptimizerImagediv {
+                display: flex;
+                align-items: center;
+                column-gap: 19px;
+                img {
+                  width: 46px;
+                  height: 47px;
+                  border-radius: 5px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/////////////////////////////////////// Media Query //////////////////////////////////
+
+@media only screen and (max-width: 1300px) {
+  .container {
+    .product-optimizer {
+      .top {
+        padding: 30px;
+        .inner {
+          display: flex;
+          column-gap: 30px;
+          .inner-left {
+            width: 55%;
+            padding: 18px 20px 18px 0px;
+          }
+          .Right {
+            width: 45%;
+            column-gap: 15px;
+          }
+        }
+      }
+      .bottom {
+        padding: 30px;
+
+        .dropdown-section {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 14px;
+
+          .search-div {
+            width: 230px;
+          }
+          .ist {
+            width: 230px;
+          }
+          .second {
+            width: 230px;
+          }
+          .third {
+            width: 230px;
+          }
+        }
+        .table-outer {
+          overflow-x: auto;
+
+          .optimizer-table {
+            margin-top: 27px;
+            min-width: 1060px;
+            border-radius: 6px;
+            border: 0.75px solid #9c9c9c;
+            .OptimizerTableHeader {
+              border-radius: 5px;
+              background: rgba(255, 125, 5, 0.06);
+              padding: 10px 0px;
+              padding-inline: 24px;
+              .MuiGrid-item {
+                color: #ff7d05;
+                font-family: "Inter";
+                font-size: 13px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 150%;
+              }
+            }
+            .OptimizerTableRows,
+            .OptimizerTableHeader {
+              display: flex;
+              column-gap: 60px;
+              .ist-div {
+                width: 320px;
+              }
+              .second-div,
+              .third-div {
+                width: 200px;
+              }
+              .forth-div {
+                width: 100px;
+                button {
+                  color: #ff7d05;
+                  padding: 4px 24px;
+                  font-family: "Inter";
+                  font-size: 12px;
+                  font-style: normal;
+                  font-weight: 500;
+                  line-height: 20px;
+                  border-radius: 4px;
+                  background: transparent;
+                  border: 1px solid #ff7d05;
+                }
+              }
+            }
+            .OptimizerTableRows {
+              padding: 19px 25px;
+              margin-right: 25px;
+              .ist-div {
+                .OptimizerImagediv {
+                  display: flex;
+                  align-items: center;
+                  column-gap: 19px;
+                  img {
+                    width: 46px;
+                    height: 47px;
+                    border-radius: 5px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .container {
+    .product-optimizer {
+      .top {
+        padding: 30px;
+        .inner {
+          display: flex;
+          flex-direction: column;
+          column-gap: 30px;
+          row-gap: 30px;
+          .inner-left {
+            width: 100%;
+            padding: 18px 20px 18px 0px;
+            flex-wrap: wrap;
+            gap: 20px;
+            border: none;
+          }
+          .Right {
+            width: 100%;
+            column-gap: 15px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .container {
+    .product-optimizer {
+      .top {
+        padding: 15px;
+        margin: 0px;
+        .inner {
+          display: flex;
+          flex-direction: column;
+          column-gap: 30px;
+          row-gap: 20px;
+          .inner-left {
+            width: 100%;
+            padding: 10px 15px 0px 0px;
+            flex-wrap: wrap;
+            gap: 20px;
+            border: none;
+          }
+          .Right {
+            width: 100%;
+            column-gap: 15px;
+            h6 {
+              font-size: 16px;
+            }
+          }
+        }
+      }
+      .bottom {
+        padding: 10px 15px;
+      }
+    }
+  }
+}

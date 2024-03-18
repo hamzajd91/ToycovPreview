@@ -1,0 +1,173 @@
+.navMain {
+  background: #ffffff;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
+}
+
+.navMain ul li::before{
+display: none;
+}
+
+.navMain .navbar-nav {
+  align-items: center;
+  gap: 20px;
+}
+.navLogo {
+  width: 80px;
+}
+
+.navSearch {
+  width: 550px;
+  width: clamp(200px, 35vw, 620px);
+  height: 40px;
+  padding-inline: 10px;
+  background: #f5f5f5;
+  border: 1px solid var(--secondary);
+  border-radius: 4px;
+}
+
+.navMain .navBtn {
+  width: 100px;
+  height: 40px;
+  border: none;
+  border-radius: 4px;
+}
+
+.navMain .navBtn:nth-child(1) {
+  background: var(--secondary);
+  border: 1px solid #dfdfdf;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.navMain .navBtn:nth-child(2) {
+  background: var(--primary);
+  border: 1px solid #dfdfdf;
+  color: white;
+  border-radius: 0px 4px 4px 0px;
+}
+
+.navRight {
+  display: flex;
+}
+
+
+.nav-phone-icons{
+display: flex;
+flex-direction: row;
+display: none;
+}
+
+.nav-large-icons{
+display: block;
+}
+
+.CartIcon {
+  display: flex;
+  position: relative;
+  align-items: start;
+  justify-content: end;
+}
+
+.CartIcon div {
+  width: 12px;
+  height: 12px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: var(--primary);
+  border-radius: 100px;
+
+  position: absolute;
+  right: 0;
+
+  color: white;
+  font-size: 10px;
+}
+
+.profileImg {
+  width: 32px;
+  height: 32px;
+  border-radius: 100px;
+}
+
+.languageDropP * {
+  font-family: var(--font1);
+}
+
+.nav-split {
+  display: flex !important;
+  flex-direction: row !important;
+}
+
+.nav-split ul {
+  display: flex !important;
+  flex-direction: row !important;
+}
+
+.labelFlag {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 10px;
+}
+
+@media screen and (max-width: 800px) {
+  .nav-split {
+    flex-direction: column !important;
+  }
+  
+  .navSearch-div{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+
+  .navSearch-div li:first-child{
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  .navSearch-div > li > input{
+    width: 92%;
+  }
+
+  .nav-split > div:nth-child(2) {
+    margin-block: 10px;
+    width: 100%;
+  }
+
+  .nav-split > div:nth-child(2) > ul {
+    width: 100%;
+    justify-content: end;
+  }
+
+  .navMain .navBtn {
+    width: 40px;
+  }
+  .navMain .navBtn span {
+    display: none;
+  }
+
+  .navMain .navbar-nav {
+    gap: 10px;
+  }
+  
+  .nav-phone-icons{
+  display: flex;
+  flex-direction: row;
+  
+  }
+  
+  .nav-large-icons{
+  display: none !important;
+  }
+
+  
+}

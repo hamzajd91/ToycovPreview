@@ -1,0 +1,70 @@
+.container {
+  .manage-orders {
+    .head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 44px;
+      h2 {
+        color: #000;
+        font-family: "Inter";
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+      }
+      .buttons {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        .btn1 {
+          height: 38px;
+          padding: 10px 13px 11px 18px;
+          border-radius: 4px;
+          border: 1px solid #ff7d05;
+          color: #ff7d05;
+          font-family: "Inter";
+          font-size: 13px;
+          font-style: normal;
+          font-weight: 600;
+        }
+        .btn2 {
+          height: 38px;
+          padding: 10px 36px;
+          color: #fff;
+          font-family: "Manrope";
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 500;
+          border-radius: 6px;
+          background: #ff7d05;
+          border: none;
+        }
+      }
+    }
+    .tab-section {
+      .tabs-out {
+        overflow-x: auto;
+        .tab-head {
+          display: flex;
+          align-items: center;
+          column-gap: 25px;
+          min-width: 600px;
+          padding: 0px;
+          .tab {
+            color: #888;
+            font-family: "Inter";
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+          }
+          .react-tabs__tab--selected {
+            color: #ff7d05 !important;
+            border-bottom: 2px solid #ff7d05;
+          }
+        }
+      }
+    }
+  }
+}

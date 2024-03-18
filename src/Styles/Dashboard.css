@@ -1,0 +1,147 @@
+
+.dashboard {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.dashboard .menuDiv {
+  display: none;
+  height: 10%;
+  width: 10%;
+}
+
+.dashboard .left {
+  width: 15%;
+  margin-right: 10px;
+  background-color: #f2f2f2;
+  height: 98vh;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+
+}
+.dashboard .menuIcon {
+  width: 30px;
+  margin-block: 5px;
+}
+
+.dashboard .heading {
+  color: black;
+  font-size: 18px;
+  font-family: Poppins;
+  font-weight: 600;
+  margin-top: 30px;
+  padding-inline: 10px;
+}
+
+.sidebarPAdding{
+padding: 0px;
+}
+
+.sidebarPAdding li::marker {
+  color: transparent;
+}
+
+.dashboard .tab {
+  padding: 20px;
+  cursor: pointer;
+  color: #4b4b4b;
+  font-size: 15px;
+  font-family: Poppins;
+  font-weight: 500;
+  margin-left: 0px;
+  list-style-type: none;
+  border-bottom: 1px solid rgb(207, 207, 207);
+}
+
+.activetab{
+  background-color: rgb(180 237 255);
+  background-color: var(--bg-primary);
+  color: var(--primary) !important;
+  transition: 0.3s ease-in-out;
+}
+
+
+.dashboard .backBtn-div {
+  display: none;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  align-items: center;
+  margin-top: 35px;
+  margin-left: 0px;
+  gap: 0px;
+}
+
+.dashboard .subHeadingLogout {
+  color: #4b4b4b;
+  font-size: 15px;
+  font-family: Poppins;
+  font-weight: 500;
+  list-style-type: none;
+}
+
+.dashboard .logoutDiv {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.dashboard .right {
+  width: 85%;
+  background: #ffffff;
+  /* padding: 30px; */
+  /* padding-top: 50px; */
+  height: 97vh;
+  overflow-y: auto;
+}
+
+@media screen and (max-width: 800px) {
+  .dashboard {
+    display: flex;
+    flex-direction: column;
+  }
+  .dashboard .left {
+    z-index: 2;
+    width: 80%;
+    padding-left: 15px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: transform 0.3s ease-in-out;
+  }
+  .dashboard .headingBack {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .dashboard .menuDiv {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    padding: 10px 0;
+    
+  }
+  .dashboard .left .backBtn-div {
+    display: block;
+    margin-right: 20px;
+  }
+
+  .dashboard .right {
+    width: 100%;
+    height: fit-content;
+    padding: 20px 0;
+    background: white;
+    overflow-y: auto;
+  }
+}
+
+.trans-100 {
+  transform: translateX(-800px);
+  transition: 0.1s ease-in-out;
+}
+
+.trans-0 {
+  transform: translateX(0px);
+  transition: 0.1s ease-in-out;
+}
+

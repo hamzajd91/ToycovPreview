@@ -1,0 +1,31 @@
+.Header-Main {
+  gap: 10px;
+}
+
+.HeaderSlider img,
+.headerSubs img {
+  width: clamp(100%, 4vw, 200%);
+}
+
+.headerSubs {
+  display: flex;
+  flex-direction: column;
+}
+
+.HeaderSlider .carousel-indicators li {
+  width: 10px !important;
+  height: 10px !important;
+  border-radius: 1100px !important;
+}
+
+@media screen and (max-width: 1000px) {
+  .Header-Main {
+    flex-direction: column;
+  }
+  .headerSubs {
+    flex-direction: row;
+  }
+  .headerSubs img {
+    width: clamp(50%, 1vw, 200%);
+  }
+}

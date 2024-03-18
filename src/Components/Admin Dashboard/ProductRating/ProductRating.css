@@ -1,0 +1,476 @@
+.reviewtop-section .review-heading {
+  margin-bottom: 22px;
+}
+.reviewtop-section .Product-Rating {
+  color: #000;
+  font-family: var(--font4);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.ratingtop-table {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.ratingtable-main {
+  width: 100%;
+  padding-bottom: 66px;
+  border-radius: 4px;
+  background: #fff;
+}
+.ratingtop-table .toptable-left {
+  padding-top: 35px;
+  margin-left: 38px;
+  height: 100px;
+}
+.ratingtop-table .toptable-right {
+  padding-top: 35px;
+  margin-right: 38px;
+  height: 100px;
+}
+.ratingtop-table .rdashboard-firstpart {
+  color: #000;
+  font-family: var(--font4);
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.rdashboard-firstpart .rdashboard-secondpart {
+  margin-left: 5px;
+}
+.toptable-right .lastdays-text {
+  margin-left: 5px;
+}
+.ratingtop-table .rdashboard-secondpart {
+  color: var(--black-40, rgba(0, 0, 0, 0.4));
+  font-family: var(--font4);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+.toptable-right .lastdays-btn {
+  width: 105px;
+  height: 32px;
+  color: #ff7d05;
+  font-family: var(--font4);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  background-color: white;
+  border: 1px solid #ff7d05;
+  border-radius: 5px;
+}
+
+.toptable-right .lastdays-text {
+  color: #818181;
+  font-family: var(--font4);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.table-session {
+  display: flex;
+  flex-direction: column;
+  margin-left: 38px;
+  margin-right: 387px;
+}
+.first-layout {
+  display: flex;
+  align-items: flex-start;
+}
+.first-layout .percentage {
+  color: #606060;
+  font-family: var(--font4);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.first-layout,
+.lastline {
+  display: flex;
+}
+
+.first-layout .percentage,
+.lastline .percentage {
+  color: #606060;
+  font-family: var(--font4);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.lastline {
+  display: flex;
+}
+.lastline .percentage {
+  color: #606060;
+  font-family: var(--font4);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.line {
+  color: #bbb;
+}
+
+.layout-line {
+  width: 95%;
+}
+.layout-paragraph {
+  width: 5%;
+}
+
+.last-primary {
+  width: 100%;
+  height: 30px;
+  display: flex;
+  position: relative;
+  margin-left: 11px;
+}
+
+.line2 {
+  position: absolute;
+  width: 95%;
+  color: #bbb;
+  z-index: 1;
+}
+
+.secondary {
+  position: absolute;
+  z-index: 2;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-evenly;
+}
+.third {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.month {
+  color: #606060;
+  font-family: var(--font4);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.rating-head {
+  margin-left: 38px;
+  padding-top: 33px;
+  height: 50px;
+}
+.rating-main {
+  width: 100%;
+  height: 400px;
+  margin-top: 11px;
+  border-radius: 4px;
+  background: #fff;
+}
+
+.rating {
+  display: flex;
+  gap: 28px;
+  flex-wrap: wrap;
+}
+.rating .Rating {
+  color: #000;
+  font-family: var(--font4);
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.first-star {
+  width: 65px;
+  height: 28px;
+  border-radius: 6px;
+  border: 1px solid #b0b0b0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.numbr-star {
+  color: #000;
+  /* font-family: var(--font4); */
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-right: 5px;
+}
+.rating-star {
+  display: flex;
+  align-items: end;
+  gap: 10px;
+  height: 58px;
+  flex-wrap: wrap;
+}
+.rating-input {
+  width: 100%;
+}
+.search-div {
+  width: 254px;
+  height: 38px;
+  border-radius: 6px;
+  border: 0.75px solid #9c9c9c;
+}
+.search-placeholder {
+  width: 254px;
+  height: 38px;
+  border-radius: 6px;
+  border: 0.75px solid #9c9c9c;
+}
+.search-placeholder::placeholder {
+  color: #878787;
+  font-family: var(--font4);
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.rating-input {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+}
+
+.search-div {
+  display: flex;
+  align-items: center;
+  width: 254px;
+  height: 38px;
+  border-radius: 6px;
+  border: 0.75px solid #9c9c9c;
+  position: relative;
+}
+
+.search-placeholder {
+  flex: 1;
+  padding-left: 10px;
+  width: 100%;
+  height: 38px;
+  border: none;
+  background: transparent;
+  font-family: var(--font4);
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.search-icon {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+}
+.custom-date-picker .MuiOutlinedInput-root {
+  background-color: black;
+}
+
+/* this is tating last section css */
+.lastsection-primary {
+  margin-top: 12px;
+  width: 100%;
+  height: 288px;
+  border-radius: 4px;
+  background: #fff;
+}
+.ratinglast-section .Ratings {
+  color: #000;
+  font-family: var(--font4);
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.lastsection-pri {
+  margin-left: 38px;
+  padding-top: 17px;
+}
+
+.ratinglast-section .rating-0 {
+  color: #ff7d05;
+  font-family: var(--font4);
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-left: 9px;
+}
+.feild-main {
+  /* border: 1px solid black; */
+  display: flex;
+  width: 100%;
+  gap: 10px;
+  padding-left: 17px;
+  flex-wrap: wrap;
+}
+.datetest {
+  width: 156px;
+  height: 38px;
+  border-radius: 6px;
+  border: 0.75px solid #9c9c9c;
+}
+.range-div {
+  position: relative;
+}
+
+.range-primary {
+  width: 262px;
+  height: 38px;
+  border-radius: 6px;
+  border: 0.75px solid #9c9c9c;
+  position: relative;
+  cursor: pointer;
+}
+
+.range-secondary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-block: 10px;
+  padding-inline: 10px;
+}
+
+.range-text {
+  font-size: 16px;
+  color: #878787;
+}
+
+.range-bottom {
+  width: 100%;
+
+  position: absolute;
+  top: 100%;
+  left: 0;
+  border-radius: 4px;
+  border: 1px solid #d3d3d3;
+  background: #fff;
+  box-shadow: 0px 1px 8px 0px rgba(0, 0, 0, 0.25);
+}
+.range-bottomdiv {
+  color: #484848;
+  font-feature-settings: "cv11" on, "cv01" on, "ss01" on;
+  font-family: var(--font4);
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  margin-left: 20px;
+  padding-top: 19px;
+  margin-bottom: 7px;
+}
+
+.line {
+  color: #bbb;
+  width: 95%;
+}
+
+.layout-line {
+  width: 95%;
+}
+
+.layout-paragraph {
+  width: 5%;
+}
+
+.third {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.month {
+  color: #606060;
+  font-family: var(--font4);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+/* Responsive code here */
+@media (max-width: 600px) {
+  .rating {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .ratingtop-table {
+    display: flex;
+    flex-direction: column;
+  }
+  .ratingtop-table .toptable-left {
+    margin-left: 10px;
+    padding-top: 0px;
+    height: 50px;
+  }
+  .ratingtop-table .toptable-right {
+    padding-top: 0px;
+    height: 50px;
+    margin-right: 0px;
+    margin-left: 10px;
+  }
+
+  .rating-head {
+    margin-left: 10px;
+  }
+  .rating-star {
+    gap: 0px;
+  }
+  .rating {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+  }
+  .review-heading {
+    margin-left: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .table-session {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+@media (max-width: 800px) {
+  .review-heading {
+    margin-left: 10px;
+  }
+}
+
+/* Adjust layout for medium screens */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .table-session {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
+/* Adjust layout for large screens */
+@media (min-width: 1025px) {
+  .table-session {
+    margin-left: 38px;
+    margin-right: 387px;
+  }
+}

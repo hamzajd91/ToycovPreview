@@ -1,0 +1,61 @@
+.FilterModal{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 800px;
+    background-color: white;
+    border: 2px solid #000;
+    box-shadow: 24;
+    padding: 2rem;
+}
+
+.filtersDiv-split{
+    display: flex;
+}
+
+.FilterButtons{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.FilterButtons button{
+padding-inline: 40px;
+}
+
+.pricingDiv {
+    padding-block: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    }
+
+.pricingDiv input{
+    margin-right: 10px;
+width: 100px;
+}
+
+@media screen and (max-width: 800px) {
+    .FilterModal{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .FilterModal{
+        overflow-y: scroll;
+        height: 90vh;
+    }
+
+    .filtersDiv-split{
+        flex-direction: column;
+        overflow-y: scroll;
+
+    }
+
+    .FilterModal{
+        width: 95%;
+    }
+}

@@ -1,0 +1,542 @@
+.Checkout {
+  width: 100%;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+.Checkout .deliveryAddress {
+  color: #17183b;
+  font-size: 18px;
+  font-family: var(--font2);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: 0.15px;
+  margin-left: 65px;
+}
+.Checkout .heading {
+  border-radius: 4px;
+  background: #fff;
+  margin-top: 10px;
+  padding: 15px 10px 15px 65px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.Checkout .heading .first {
+  display: flex;
+  column-gap: 10px;
+  align-items: center;
+}
+.Checkout .heading .first .homeDiv {
+  padding: 0px 5px 0px 5px;
+  border-radius: 4px;
+  border: 1px solid var(--primary);
+}
+.Checkout .heading .first .p1 {
+  color: #17183b;
+  font-size: 18px;
+  font-family: var(--font2);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: 0.15px;
+}
+.Checkout .heading .first .homeDiv .p2 {
+  color: var(--primary);
+  font-size: 12px;
+  font-family: var(--font2);
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: uppercase;
+  text-align: center;
+}
+.Checkout .heading .p3 {
+  color: #4b4b4b;
+  font-size: 15px;
+  font-family: var(--font2);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px;
+  margin-top: 5px;
+}
+.Checkout .heading .second {
+  display: flex;
+  column-gap: 10px;
+  margin-top: 5px;
+}
+
+.Checkout .heading .second .p4 {
+  color: #17183b;
+  font-size: 16px;
+  font-family: var(--font2);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0.1px;
+}
+.Checkout .heading .second .p5 {
+  color: #4b4b4b;
+  font-size: 15px;
+  font-family: var(--font2);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.Checkout .heading .right .first {
+  display: flex;
+  column-gap: 10px;
+}
+.Checkout .heading .right .first .p4 {
+  color: #17183b;
+  font-size: 16px;
+  font-family: var(--font2);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0.1px;
+  border-right: 1px solid #d1d1d8;
+  padding: 0px 10px 0px 10px;
+  cursor: pointer;
+}
+.Checkout .heading .right .first .p5 {
+  color: #e14b4b;
+  font-size: 16px;
+  font-family: var(--font2);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0.1px;
+  cursor: pointer;
+}
+.Checkout .heading .right .second {
+  display: flex;
+  column-gap: 10px;
+  align-items: center;
+  cursor: pointer;
+}
+.Checkout .heading .right .second .p6 {
+  color: var(--primary);
+  font-size: 15px;
+  font-family: var(--font2);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0.1px;
+}
+
+.Checkout .selectAll {
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  padding: 8px 40px 8px 40px;
+  column-gap: 50px;
+  justify-content: space-between;
+}
+.Checkout .selectAll .select {
+  display: flex;
+  width: 30%;
+}
+.Checkout .selectAll .select .orderHeading {
+  color: #17183b;
+  font-size: 18px;
+  font-family: var(--font2);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0.15px;
+}
+.Checkout .selectAll .select p {
+  margin-left: 15px;
+  color: #2e2e2e;
+  font-size: 15px;
+  font-family: var(--font2);
+  font-style: normal;
+  font-weight: 400;
+}
+.Checkout .selectAll .selectAllText {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Checkout .selectAll .selectAllText p {
+  color: #808191;
+  font-size: 14px;
+  font-family: var(--font2);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.Checkout .itemListDiv {
+  border-radius: 4px;
+  background: #fff;
+  padding: 10px 40px 40px 40px;
+  margin-top: 10px;
+}
+.Checkout .itemListDiv .CheckoutAll {
+  border-radius: 2px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  align-items: center;
+  margin-top: 1px;
+  border-bottom: 2px solid #d8d8d8;
+  column-gap: 50px;
+}
+.Checkout .itemListDiv .CheckoutAll .extraDiv {
+  border-radius: 2px;
+  background: #fff;
+  display: flex;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  align-items: center;
+  margin-top: 1px;
+  border-bottom: 2px solid #d8d8d8;
+  column-gap: 50px;
+  width: 100%;
+  justify-content: space-between;
+}
+.Checkout .itemListDiv .CheckoutAll .select {
+  display: flex;
+  align-items: center;
+  column-gap: 15px;
+}
+.Checkout .itemListDiv .CheckoutAll .select .CheckoutItemImage {
+  height: 80px;
+  width: 80px;
+}
+
+.Checkout .itemListDiv .CheckoutAll .select .nameId .name {
+  color: #000;
+  font-size: 15px;
+  font-family: var(--font2);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.Checkout .itemListDiv .CheckoutAll .select .nameId .id {
+  color: #7a7a7a;
+  font-size: 15px;
+  font-family: var(--font2);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.Checkout .itemListDiv .CheckoutAll .addressText p {
+  color: #4b4b4b;
+  font-size: 14px;
+  font-family: var(--font2);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.Checkout .itemListDiv .CheckoutAll .priceText p {
+  color: var(--primary);
+  font-size: 16px;
+  font-family: var(--font2);
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.Checkout .itemListDiv .CheckoutAll .itemAmount {
+  display: flex;
+  flex-direction: row;
+}
+
+.Checkout .itemListDiv .CheckoutAll .itemAmount .showAmount {
+  border-radius: 4px;
+  border: 1px solid #d7dadd;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  padding: 5px;
+}
+
+.Checkout .itemListDiv .CheckoutAll .removeText p {
+  color: #d22f27;
+  font-size: 15px;
+  font-family: var(--font2);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.Checkout .itemListDiv .addMore {
+  padding: 7px 25px 7px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  column-gap: 40px;
+  margin-top: 25px;
+  width: 100%;
+}
+.Checkout .itemListDiv .addMore .boldText {
+  color: #4e89e8;
+  font-size: 14px;
+  font-family: var(--font2);
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.Checkout .itemListDiv .addMore .unboldText {
+  color: #535353;
+  font-size: 16px;
+  font-family: var(--font2);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.Checkout .bottomDiv {
+  border-radius: 4px;
+  background: #fff;
+  padding: 20px 40px 20px 40px;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: center;
+}
+.Checkout .bottomDiv .summary {
+  border-radius: 4px;
+  border: 1px solid var(--primary);
+  background: #fff6ed;
+  padding: 10px 20px 10px 20px;
+  align-items: center;
+  width: 30%;
+}
+
+.Checkout .bottomDiv .summary .p1 {
+  color: #2e2e2e;
+  font-size: 20px;
+  font-family: var(--font2);
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.Checkout .bottomDiv .summary .first {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.Checkout .bottomDiv .summary .first .p2 {
+  color: #808191;
+  font-size: 15px;
+  font-family: var(--font2);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.Checkout .bottomDiv .summary .first .p3 {
+  color: #535353;
+  font-size: 15px;
+  font-family: var(--font2);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.Checkout .bottomDiv .summary .second {
+  display: flex;
+  margin-top: 10px;
+  align-items: center;
+  justify-content: space-between;
+}
+.Checkout .bottomDiv .summary .second .p4 {
+  color: #808191;
+  font-size: 15px;
+  font-family: var(--font2);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.Checkout .bottomDiv .summary .second .p5 {
+  color: #535353;
+  font-size: 15px;
+  font-family: var(--font2);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.Checkout .bottomDiv .summary .third {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.Checkout .bottomDiv .summary .third .p6 {
+  color: #000;
+  font-size: 16px;
+  font-family: var(--font2);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.Checkout .bottomDiv .summary .third .p7 {
+  color: var(--primary);
+  font-size: 18px;
+  font-family: var(--font2);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.Checkout .bottomDiv .payment {
+  width: 30%;
+}
+.Checkout .bottomDiv .payment .p8 {
+  color: #4980d8;
+  font-size: 15px;
+  font-family: var(--font2);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.Checkout .bottomDiv .payment .applyDiv {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.Checkout .bottomDiv .payment .applyDiv .applyInput {
+  border-radius: 4px;
+  background: #f5f5f5;
+  width: 70%;
+  height: 38px;
+}
+.Checkout .bottomDiv .payment .applyDiv .applyButton {
+  width: 25%;
+  height: 37.553px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--primary);
+}
+.Checkout .bottomDiv .payment .applyDiv .applyButton .p9 {
+  color: var(--primary);
+  font-size: 12px;
+  font-family: var(--font2);
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.Checkout .bottomDiv .payment .payButton {
+  display: flex;
+  width: 100%;
+  height: 38px;
+  padding: 0px 32px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 4px;
+  background: var(--primary);
+  margin-top: 20px;
+}
+.Checkout .bottomDiv .payment .payButton .p10 {
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  font-family: var(--font2);
+  font-style: normal;
+  font-weight: 600;
+  line-height: 15px;
+  letter-spacing: 0.5px;
+}
+
+@media screen and (max-width: 870px) {
+  .Checkout .heading {
+    padding: 15px 10px 15px 15px;
+    flex-direction: column;
+    align-items: start;
+    justify-content: flex-start;
+    row-gap: 20px;
+  }
+
+  .Checkout .itemListDiv {
+    padding: 0px 10px 40px 10px;
+  }
+  .Checkout .itemListDiv .addMore {
+    width: 100%;
+
+    padding: 7px 15px 7px 15px;
+  }
+  .Checkout .bottomDiv {
+    padding: 20px 0px 20px 0px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .Checkout .bottomDiv .summary {
+    width: 95%;
+  }
+  .Checkout .bottomDiv .payment {
+    margin-top: 30px;
+    width: 95%;
+  }
+  .Checkout .itemListDiv .CheckoutAll .itemAmount {
+    margin-right: 30px;
+  }
+}
+
+@media screen and (max-width: 715px) {
+  .Checkout .itemListDiv .CheckoutAll .select .CheckoutItemImage {
+    height: 50px;
+    width: 50px;
+  }
+  .Checkout .itemListDiv .CheckoutAll .select .nameId .name {
+    font-size: 13px;
+    line-height: 15px;
+  }
+  .Checkout .itemListDiv .CheckoutAll .select .nameId .id {
+    font-size: 11px;
+    line-height: normal;
+    margin-top: 5px;
+  }
+
+  .Checkout .itemListDiv {
+    padding: 10px 0px 40px 40px;
+    overflow-x: scroll;
+  }
+  .Checkout .heading {
+    padding: 15px 10px 15px 15px;
+  }
+}
+
+@media screen and (max-width: 535px) {
+  .Checkout {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .Checkout .selectAll {
+    column-gap: 60px;
+  }
+  .Checkout .heading {
+    padding: 15px 10px 15px 15px;
+  }
+  .Checkout .itemListDiv .CheckoutAll .itemAmount {
+    margin-left: 20px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .Checkout .selectAll {
+    column-gap: 80px;
+  }
+}

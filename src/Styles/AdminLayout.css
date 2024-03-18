@@ -1,0 +1,153 @@
+.AdminDashboard {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 92vh;
+  padding-block: clamp(10px, 5vw, 20px);
+}
+
+.AdminDashboard .menuDiv {
+  display: none;
+}
+
+.AdminDashboard .left {
+  width: 17%;
+  /* margin-right: 10px; */
+  background-color: var(--bg-primary);
+  overflow-y: auto;
+  height: 98vh;
+  height: 100%;
+  padding-left: 12px !important;
+}
+.AdminDashboard .menuIcon {
+  width: 30px;
+  margin-block: 5px;
+}
+
+
+.AdminDashboard .tab {
+  padding-left: 0px;
+  padding-right: 10px;
+  padding-block: 5px;
+  cursor: pointer;
+  color: var(--text-primary);
+  font-family: var(--font3);
+  font-size: clamp(16px, 5vw,19px);
+  font-weight: 400;
+  margin-left: 0px;
+  list-style-type: none;
+}
+
+.adminProductsTab {
+  /* padding-inline: 5px !important; */
+}
+
+.producticons {
+  width: 16px !important;
+  height: 16px !important;
+}
+
+.activetab * {
+  background-color: var(--bg-primary);
+  color: var(--primary) !important;
+  transition: 0.3s ease-in-out;
+}
+
+.AdminDashboard .MuiAccordionDetails-root{
+  padding-inline-start: 20px !important;
+  padding-inline-end: 0px !important;
+}
+
+.AdminDashboard .MuiAccordionDetails-root p{
+  padding-left: 10px !important;
+}
+
+.adminBullet {
+  width: 25px;
+  height: 25px;
+  margin-right: -5px;
+}
+
+.AdminDashboard .backBtn-div {
+  display: none;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  align-items: center;
+  margin-top: 35px;
+  margin-left: 0px;
+  gap: 0px;
+}
+
+.AdminDashboard .right {
+  width: 85%;
+
+  background: var(--bg-secondary);
+  padding: 10px;
+  padding-inline: 20px;
+  /* padding-top: 50px; */
+  height: 100%;
+  overflow-y: auto;
+}
+
+.AdminDashTab {
+  box-shadow: none !important;
+}
+
+.AdminDashTab > div:first-child {
+  /* border-bottom: 1px solid silver; */
+}
+
+.AdminDashTab > div:first-child > div:first-child {
+  margin: 0px;
+}
+
+@media screen and (max-width: 1150px) {
+  .AdminDashboard .left {
+    width: 20%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .AdminDashboard {
+    display: flex;
+    flex-direction: column;
+  }
+  .AdminDashboard .left {
+    z-index: 2;
+    width: 80%;
+    padding-left: 15px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .AdminDashboard .menuDiv {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    padding: 10px 0;
+  }
+  .AdminDashboard .left .backBtn-div {
+    display: block;
+    margin-right: 20px;
+  }
+
+  .AdminDashboard .right {
+    width: 100%;
+    height: fit-content;
+    padding: 20px 0;
+    background: white;
+    overflow-y: auto;
+  }
+}
+
+.trans-100 {
+  transform: translateX(-800px);
+  transition: 0.1s ease-in-out;
+}
+
+.trans-0 {
+  transform: translateX(0px);
+  transition: 0.1s ease-in-out;
+}
